@@ -28,8 +28,6 @@ class ClassifyPlugin:
                for i in range(len(name)-1, 1, -1):
                   if name[i] == '_' and name[i-1] == '_' and i != (len(name)-1) and name[i+1] != '.':
                      treeclass = name[i-2].upper() + "." + name[i+1:len(name)]
-                     #print name, treeclass
-                     #raw_input()
                      period = treeclass.find(".", 2)
                      if (period != -1):
                         treeclass = treeclass[0:period]
@@ -37,8 +35,6 @@ class ClassifyPlugin:
                         # Species-level
                         treeclass = treeclass[2:len(treeclass)]
                         treeclass = treeclass[0].upper() + treeclass[1:len(treeclass)]
-                     #print name, treeclass, treeclass.startswith("S.")
-                     #raw_input()
                      if (not self.counts.has_key(treeclass)):
                            self.treeclasses[name] = treeclass+".01"
                            self.counts[treeclass] = 1
