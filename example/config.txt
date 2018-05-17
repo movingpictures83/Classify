@@ -1,0 +1,2 @@
+Prefix plugins/Classify/example/
+Plugin Classify inputfile unclassified.noa outputfile classified.noa
