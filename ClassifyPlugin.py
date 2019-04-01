@@ -35,7 +35,7 @@ class ClassifyPlugin:
                         # Species-level
                         treeclass = treeclass[2:len(treeclass)]
                         treeclass = treeclass[0].upper() + treeclass[1:len(treeclass)]
-                     if (not self.counts.has_key(treeclass)):
+                     if (not treeclass in self.counts):
                            self.treeclasses[name] = treeclass+".01"
                            self.counts[treeclass] = 1
                      else:

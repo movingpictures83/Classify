@@ -2,7 +2,7 @@
 # Language: Python
 # Input: NOA (OTU nodes and classifications)
 # Output: NOA (OTU nodes and lowest classification)
-# Tested with: PluMA 1.0, Python 2.7
+# Tested with: PluMA 1.0, Python 3.6
 
 PluMA plugin that takes a set of nodes from a NOde Attribute (NOA)
 file and classifies them at their lowest level.  The plugin assumes
